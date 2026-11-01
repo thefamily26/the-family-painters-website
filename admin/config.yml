@@ -1,7 +1,6 @@
 
 backend:
-  name: github
-  repo: thefamily26/the-family-painters-website
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
