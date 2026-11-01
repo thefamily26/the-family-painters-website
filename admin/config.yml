@@ -1,1 +1,34 @@
 
+backend:
+  name: github
+  repo: thefamily26/the-family-painters-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "gallery"
+    label: "Our Work - Fotos"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Nombre del trabajo"
+        name: "title"
+        widget: "string"
+      - label: "Tipo de pintura"
+        name: "category"
+        widget: "select"
+        options:
+          - "Interior"
+          - "Exterior"
+          - "Cabinets"
+      - label: "Foto"
+        name: "image"
+        widget: "image"
+      - label: "Descripción"
+        name: "description"
+        widget: "text"
+        required: false
+
